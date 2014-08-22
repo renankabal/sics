@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Empresa</title>
+
+<script>
+//-----------------------------------------------------
+Função: Converte letras minúsculas para maísculas
+//-----------------------------------------------------
+function up(lstr){ // converte minusculas em maiusculas
+var str=lstr.value; //obtem o valor
+lstr.value=str.toUpperCase(); //converte as strings e retorna ao campo
+}
+</script>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+</script>
+
+<script type="text/javascript" src="js/bootstrap.min.js">
+</script>
+
+
+<script type="text/JavaScript">
+function up(lstr){ // converte minusculas em maiusculas
+var str=lstr.value; //obtem o valor
+lstr.value=str.toUpperCase(); //converte as strings e retorna ao campo
+}
+function down(lstr){ // converte maiusculas em minusculas
+var str=lstr.value; //obtem o valor
+lstr.value=str.toLowerCase(); //converte as strings e retorna ao campo
+}
+</script></head>
+
+<body>
+
+	<!-- construção da tabela-->
+	<div class="table-responsive">
+		<form name="cadastro" method="POST" action="banco.html">
+		<table border="0" width="80%" align="center">
+			<tr>
+				<td colspan="8" bgcolor="#6495ED"><b><center>DISCRIMINAÇÃO DE SERVIÇO</center></b></td>
+			</tr>
+			<tr>
+				<td width="5%"><b>CLIENTE</b></td>
+				<td width="15%"><input type="text" class="input-xlarge" id="cliente" placeholder="Nome do cliente" size="60%" onkeyup="up(this)" autofocus></td>
+				<td width="5%"><b>CONTATO</b></td>
+				<td><input type="text"  id="cliente" placeholder="Digite o telefone"></td>
+				<td width="5%"><b>BAIRRO</b></td>
+				<td width="15%"><input type="text" class="input-xlarge" id="cliente" placeholder="Nome do bairro" size="60%" onkeyup="up(this)"></td>				
+			</tr>			
+			<tr>
+				<td width="5%"><b>ENDEREÇO</b></td>
+				<td><input type="text" id="cliente" placeholder="Digite o endereço" onkeyup="up(this)"></td>
+				<td width="5%"><b>Nº </b></td>
+				<td><input type="text" id="cliente" placeholder="Número da rua"></td>
+				<td width="5%"><b>COMPLEMENTO</b></td>
+				<td><input type="text" class="input-xlarge" id="cliente" placeholder="Digite o complemento" onkeyup="up(this)"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="8" bgcolor="#6495ED"><b><center>PREÇO E QUANTIDADE DE MATERIAIS USADOS</center></b></td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">esponjoso:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">tubo:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">solda:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">napa:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">tubo:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">base:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">gás refrigeração:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">cabo pp:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">fita isolante</td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">parafusos:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+				<td width="15%">sensor:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">dreno:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">bucha:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">capacitor:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">braçadeira:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+			</tr>
+			<tr>			
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">combustível:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">mat.lav.ar:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>	
+				<td width="5%"><input type="number" class="input-mini"></td>
+				<td width="15%">mat.lav.centr:<b>RS </b><input type="text" class="input-mini" onKeyPress="return(MascaraMoeda(this,'.',',',event))"></td>
+			</tr>
+			<tr>
+				<td colspan="8"><b>Valor</b></td>
+			</tr>	
+			<tr>
+				<td colspan="8">
+				<b>Fez pós serviços?</b>
+				<select>
+ 					 <option>Sim</option>
+ 					 <option>Não</option>
+				</select>	
+
+				</td>
+			</tr>	
+			<tr>
+				<td colspan="8">
+				<b>Pagamento em: </b>
+				<select>
+ 					 <option>Dinheiro</option>
+ 					 <option>Cartão</option>
+  					<option>Cheque</option>
+  					<option>Outro</option>
+				</select>					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="8"><center>
+				       <button type="submit" class="btn btn-primary">Salvar</button>
+				       <a href="#myModal" id="btn-show-modal" role="button" class="btn btn" data-toggle="modal">Cancelar</a>
+				       </center>
+				</td>
+			</tr>	
+		</table>
+		</form>	
+	</div>
+<!-- BOTÃO QUE CHAMA A MODAL -->
+
+<p>
+<!-- MODAL A SER CHAMADA -->
+
+<div id="myModal" class="modal hide fade" id="dialog-example" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+<div class="modal-header">
+
+<h4>Aviso</h4>
+
+</div>	
+
+<div class="modal-body">
+
+
+	Deseja realmente cancelar o serviço?
+</div>
+
+
+<div class="modal-footer">
+
+<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Sim</button>
+<button type="button" class="btn btn" data-dismiss="modal">Não</button>
+</div>
+
+</div>
+
+
+</body>
+
+</html>
+<script language="javascript">
+//-----------------------------------------------------
+//Funcao: MascaraMoeda
+//Parametro:
+//   objTextBox : Objeto (TextBox)
+//   SeparadorMilesimo : Caracter separador de milésimos
+//   SeparadorDecimal : Caracter separador de decimais
+//   e : Evento
+//Retorno: Booleano
+//-----------------------------------------------------
+function MascaraMoeda(objTextBox, SeparadorMilesimo, SeparadorDecimal, e){
+    var sep = 0;
+    var key = '';
+    var i = j = 0;
+    var len = len2 = 0;
+    var strCheck = '0123456789';
+    var aux = aux2 = '';
+    var whichCode = (window.Event) ? e.which : e.keyCode;
+    if (whichCode == 13) return true;
+    key = String.fromCharCode(whichCode); // Valor para o código da Chave
+    if (strCheck.indexOf(key) == -1) return false; // Chave inválida
+    len = objTextBox.value.length;
+    for(i = 0; i < len; i++)
+        if ((objTextBox.value.charAt(i) != '0') && (objTextBox.value.charAt(i) != SeparadorDecimal)) break;
+    aux = '';
+    for(; i < len; i++)
+        if (strCheck.indexOf(objTextBox.value.charAt(i))!=-1) aux += objTextBox.value.charAt(i);
+    aux += key;
+    len = aux.length;
+    if (len == 0) objTextBox.value = '';
+    if (len == 1) objTextBox.value = '0'+ SeparadorDecimal + '0' + aux;
+    if (len == 2) objTextBox.value = '0'+ SeparadorDecimal + aux;
+    if (len > 2) {
+        aux2 = '';
+        for (j = 0, i = len - 3; i >= 0; i--) {
+            if (j == 3) {
+                aux2 += SeparadorMilesimo;
+                j = 0;
+            }
+            aux2 += aux.charAt(i);
+            j++;
+        }
+        objTextBox.value = '';
+        len2 = aux2.length;
+        for (i = len2 - 1; i >= 0; i--)
+        objTextBox.value += aux2.charAt(i);
+        objTextBox.value += SeparadorDecimal + aux.substr(len - 2, len);
+    }
+    return false;
+}
+</script>
